@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guía TypeScript</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body
+    style="background-color: #f3d3cf; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #c72026;">
+    <!-- Ejercicio #1 -->
+    <header>
+        <h1 class="title">Guía de TypeScript</h1>
+    </header>
+    <!-- Ejercicio #2 -->
+    <h2>Calculadora</h2>
+
+    <div>
+        <label for="numero1">Número 1:</label>
+        <input type="number" id="numero1" />
+    </div>
+
+    <div>
+        <label for="numero2">Número 2:</label>
+        <input type="number" id="numero2" />
+    </div>
+
+    <div>
+        <label for="operacion">Operación:</label>
+        <select id="operacion">
+            <option value="sumar">Sumar</option>
+            <option value="restar">Restar</option>
+            <option value="multiplicar">Multiplicar</option>
+            <option value="dividir">Dividir</option>
+            <option value="potencia">Potencia</option>
+            <option value="factorial">Factorial</option>
+        </select>
+    </div>
+
+    <div>
+        <button onclick="calcular()">Calcular</button>
+    </div>
+
+    <h4>Resultado: <span id="resultado">0</span></h4>
+    <hr>
+
+    <!-- Ejercicio #3 -->
+    <h2>Gestión de Canciones</h2>
+
+    <div>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" placeholder="Título de la canción" />
+    </div>
+
+    <div>
+        <label for="genero">Género:</label>
+        <input type="text" id="genero" placeholder="Género de la canción" />
+    </div>
+
+    <div>
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" placeholder="Autor de la canción" />
+    </div>
+
+    <div>
+        <button onclick="crearCancion()">Crear Canción</button>
+        <button onclick="establecerAutor()">Establecer Autor</button>
+        <button onclick="mostrarCancion()">Mostrar Canción</button>
+    </div>
+
+    <h4>Resultado:</h4>
+    <p id="resultadoCancion">No hay datos de la canción aún.</p>
+    <hr>
+
+    <!-- Ejercicio #4 -->
+    <h2>Gestión de Cuentas</h2>
+
+    <div>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" placeholder="Nombre del titular" />
+    </div>
+
+    <div>
+        <label for="cantidad">Cantidad Inicial:</label>
+        <input type="number" id="cantidad" placeholder="Cantidad inicial" />
+    </div>
+
+    <div>
+        <label for="tipoCuenta">Tipo de Cuenta:</label>
+        <select id="tipoCuenta">
+            <option value="Ahorro">Ahorro</option>
+            <option value="Corriente">Corriente</option>
+        </select>
+    </div>
+
+
+    <div>
+        <label for="numeroCuenta">Número de Cuenta:</label>
+        <input type="text" id="numeroCuenta" placeholder="Número de cuenta" />
+    </div>
+
+    <div>
+        <button onclick="crearCuenta()">Crear Cuenta</button>
+    </div>
+
+    <hr>
+
+    <div>
+        <label for="valorDeposito">Valor a Depositar:</label>
+        <input type="number" id="valorDeposito" placeholder="Cantidad a depositar" />
+        <button onclick="depositarCuenta()">Depositar</button>
+    </div>
+
+    <div>
+        <label for="valorRetiro">Valor a Retirar:</label>
+        <input type="number" id="valorRetiro" placeholder="Cantidad a retirar" />
+        <button onclick="retirarCuenta()">Retirar</button>
+    </div>
+
+    <div>
+        <button onclick="mostrarDatosCuenta()">Mostrar Datos de la Cuenta</button>
+    </div>
+
+    <h3>Resultado:</h3>
+    <p id="resultadoCuenta">No hay datos de la cuenta aún.</p>
+    <hr>
+
+    <!-- Ejercicio #5 -->
+    <h2>Crear y Gestionar Empleado</h2>
+
+    <div>
+        <label for="empleadoNombre">Nombre:</label>
+        <input type="text" id="empleadoNombre" placeholder="Nombre del empleado" />
+    </div>
+
+    <div>
+        <label for="empleadoApellido">Apellido:</label>
+        <input type="text" id="empleadoApellido" placeholder="Apellido del empleado" />
+    </div>
+
+    <div>
+        <label for="empleadoDireccion">Dirección:</label>
+        <input type="text" id="empleadoDireccion" placeholder="Dirección del empleado" />
+    </div>
+
+    <div>
+        <label for="empleadoTelefono">Teléfono:</label>
+        <input type="text" id="empleadoTelefono" placeholder="Teléfono del empleado" />
+    </div>
+
+    <div>
+        <label for="empleadoEdad">Edad:</label>
+        <input type="number" id="empleadoEdad" placeholder="Edad del empleado" />
+    </div>
+
+    <div>
+        <label for="empleadoSueldo">Sueldo:</label>
+        <input type="number" id="empleadoSueldo" placeholder="Sueldo del empleado" />
+    </div>
+
+    <div>
+        <button onclick="crearEmpleado()">Crear Empleado</button>
+    </div>
+
+    <h3>Resultado:</h3>
+    <p id="resultadoEmpleado">No hay datos del empleado aún.</p>
+
+
+    <script src="Guia_TS.js"></script>
+
+</body>
+
+</html>
