@@ -373,7 +373,7 @@ var Empleado = /** @class */ (function (_super) {
     __extends(Empleado, _super);
     // Constructor de Empleado
     function Empleado(nombre, apellido, direccion, telefono, edad, sueldo) {
-        var _this = _super.call(this, nombre, apellido, direccion, telefono, edad) || this; // Llamamos al constructor de Persona
+        var _this = _super.call(this, nombre, apellido, direccion, telefono, edad) || this;
         _this.sueldo = sueldo;
         return _this;
     }
